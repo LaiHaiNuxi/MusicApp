@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="Trang Chủ"
+        android:textColor="@color/white"
+        android:padding="15dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <fragment
+                android:name="com.example.rhythmiq.Fragment.Fragment_PlayList"
+                android:id="@+id/fragmet_playlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <fragment
+                android:name="com.example.rhythmiq.Fragment.Fragment_Type"
+                android:id="@+id/fragmet_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <fragment
+                android:name="com.example.rhythmiq.Fragment.Fragment_Album"
+                android:id="@+id/fragmet_album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

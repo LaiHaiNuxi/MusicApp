@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="15dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="35dp">
+        <ImageView
+            android:id="@+id/imageofitem"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@drawable/load"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textofitem"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="item"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:contentDescription="@string/Todo"
+        android:gravity="center"/>
+</LinearLayout>
